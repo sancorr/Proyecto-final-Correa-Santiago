@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finaliza tu compra</title>
+    <link rel="shortcut icon" href="../img/wildCapital-removebg-preview.png" type="image/x-icon">
+    <meta name="description" content="Wild Capital ofrece una experiencia única que fusiona servicios financieros sólidos con una amplia selección de productos de alta calidad. Descubre soluciones financieras innovadoras y una tienda online confiable para satisfacer todas tus necesidades en un solo lugar.">
+    <meta name="keywords" content="Wild Capital, finanzas, préstamos, tienda online, productos financieros, inversión, ahorro, asesoramiento financiero">
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="title">
+            <h1>Finaliza tu compra</h1>
+            <hr>
+        </div>
+        
+        <div id="compra">
+            <div id="carritoContainer">
+
+                <!-- Contenedor donde se pintarán los elementos del carrito -->
+    
+            </div>
+    
+            <div class="containerForm">
+                <h2>Tus datos personales</h2>
+    
+                <form id="formularioCompra">
+                    <div class="formInputs">
+                        <div><label for="nombre">Nombre:</label></div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+                    </div>
+                    <div class="formInputs">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@email.com" required>
+                    </div>
+                    <div class="formInputs">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="1154456516" required>
+                    </div>
+                    <div class="formInputs">
+                        <label for="cuotas">Cantidad de cuotas:</label>
+                        <select class="selectCuotas" id="cuotas" name="cuotas">
+                            <option value="1">1 Pago único</option>
+                            <option value="3">3 Pagos</option>
+                            <option value="6">6 Pagos</option>
+                            <option value="9">9 Pagos</option>
+                            <option value="12">12 Pagos</option>
+                        </select>
+                    </div>
+    
+                    <h2>Datos de tu tarjeta</h2>
+                    <div class="tarjeta">
+                        <div id="numeroTarjetaCont" class="campo">
+                            <label for="numeroTarjeta">Número de Tarjeta</label>
+                            <input type="text" id="numeroTarjeta" name="numeroTarjeta"
+                                placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                        </div>
+                        <div id="nombreTitularCont" class="campo">
+                            <label for="nombreTitular">Nombre del Titular</label>
+                            <input type="text" id="nombreTitular" name="nombreTitular"
+                                placeholder="Ingrese el nombre del titular" required>
+                        </div>
+                        <div id="cvcCont" class="campo">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" name="cvc" placeholder="Código de seguridad (CVC)"
+                                required>
+                        </div>
+                        <div id="fechaVencimientoCont" class="campo">
+                            <label for="fechaVencimiento">Hasta</label>
+                            <input type="text" id="fechaVencimiento" name="fechaVencimiento" placeholder="MM/AA" required>
+                        </div>
+                    </div>
+    
+    
+                    <button class="boton" type="submit">Finalizar Compra</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="../js/compra.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/bcgLogin/bg.jpg");
+}
+
+/************************************ ESTILOS NAVBAR ************************************/
+.navbar{
+    background-color: transparent!important;
+    
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    color: white!important;
+    font-size: 1.3em;
+}
+
+
+.navbar-brand img {
+    width: 120px;
+    height: 80px;
+    border-radius: 30%;
+}
+
+
+/********************************** ESTILOS PRODUCTOS ******************************/
+
+#cardsCelulares{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    background-color: rgba(124, 0, 31, 0.35);
+    padding: 20px;
+    margin: 20px 90px;
+    border-radius: 30px;
+}
+
+#cardsCelulares .card {
+    width: 200px;
+    margin: 10px;
+    display: flex;
+}
+
+#cardsCelulares .card .card-img-top {
+    width: 100%; 
+    height: 100%; 
+}
+
+#cardsCelulares .card .card-body {
+    flex-grow: 1; 
+}
+
+.card .agregarCarrito {
+    background-color: purple;
+    border: none;
+}
+
+.carritoVacio{
+    color: white;
+}
+
+
+/* Estilos para la barra de búsqueda */
+#searchBar {
+    background-color: transparent!important;
+    width: calc(100% - 40px); /* Calcula el ancho para que coincida con el ancho de la sección #cardsCelulares */
+    background-color: #ffffff; 
+    padding: 10px; 
+    margin: 20px; 
+    display: flex;
+    align-items: center; 
+    padding-top: 100px;
+}
+
+#searchInput {
+    flex: 1; /* Hace que el input ocupe todo el espacio disponible */
+    margin-right: 10px; 
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 5px;
+
+}
+
+#searchButton {
+    background-color:rgb(168, 2, 168); 
+    color: #ffffff; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos para el carrito */
+
+#carritoMenu {
+    display: none; /* Por defecto, el menú del carrito está oculto */
+    position: fixed; /* Fija la posición del menú para que permanezca en su lugar incluso al hacer scroll */
+    top: 0; /* Posición superior del menú */
+    right: 0; /* Posición derecha del menú */
+    bottom: 0; /* Posición inferior del menú */
+    width: 40%; /* Ancho del menú */
+    background-color:rgba(0, 0, 0, 0.95); /* Color de fondo del menú */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el menú */
+    z-index: 1000; /* Índice de apilamiento para asegurar que el menú esté encima de otros elementos */
+    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido del menú es demasiado largo */
+    padding: 150px 20px 20px 20px; /* Espaciado interior del menú */
+    transform: translateX(100%); /* Desplazar el menú hacia la derecha al 100% de su ancho */
+    animation: mostrarCarrito 1.5s forwards; /* Aplicar la animación al mostrar el carrito */
+}
+
+/* Animación para mostrar el carrito */
+@keyframes mostrarCarrito {
+    from {
+        transform: translateX(100%); /* Empieza completamente desplazado hacia la derecha */
+        opacity: 0; /* Opacidad inicial */
+    }
+    to {
+        transform: translateX(0); /* Termina con el menú en su posición original */
+        opacity: 1; /* Opacidad completa */
+    }
+}
+  
+#carritoMenu.mostrar {
+    display: block; /* Mostrar el menú cuando tiene la clase "mostrar" */
+
+}
+
+.item-carrito {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+  
+  /* Estilos para la imagen del producto */
+.item-carrito img {
+    width: 80px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+  
+  /* Estilos para el nombre del producto */
+.detalle-carrito {
+    flex: 1; /* El detalle del producto ocupará el espacio restante */
+    color: white;
+}
+.precioTotal{
+    color: white;
+}
+
+#carritoLink {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+    background-color: transparent!important;
+}
+
+#carritoLink img {
+    width: 50px; 
+    margin-right: 5px; 
+}
+
+#carritoLink span{
+    background-color: purple;
+}
+  
+/* Estilos para el botón de eliminar */
+.btn-quitar {
+    background-color: #dd2e02; 
+    color: #ffffff; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#finalizarCompraBtn{
+    background-color: purple;
+    border: none;
+}
+
+#cleanButton {
+    background-color: #dd2e02; 
+    color: #ffffff; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+/***************************** ESTILOS FORMULARIO PRESTAMOS ********************************/
+#prestamos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    
+}
+
+#prestamos h2{
+    color: white;
+    font-size: 3em;
+    margin: 10px 0px;
+}
+
+#interesForm {
+    width: 300px; 
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+}
+
+#interesForm div {
+    margin-bottom: 15px; 
+}
+
+#interesForm label {
+    display: block; 
+    color: white;
+    font-size: 1.2em;
+}
+
+#interesForm input {
+  width: 100%; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#interesForm button {
+    width: 100%; 
+    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultadoPrestamo {
+    margin-top: 20px; 
+}
+
+/****************** QUIENES SOMOS *****************/
+#quienesSomos{
+    color: white;
+    background-color: rgb(234, 241, 248, 0.2);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+
+
+/****************** FINALIZAR COMPRA *****************/
+section{
+    margin: 100px;
+    color: white;
+    background-color: rgba(124, 0, 31, 0.35);
+    border-radius: 30px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+#compra{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#carritoContainer {
+    width: 40vw;
+    
+}
+#carritoContainer .containerCompra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid rgb(19, 18, 18, 0.6) ;
+    
+}
+
+#carritoContainer .containerCompraImg {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+/* ESTILOS FORMULARIO COMPRA */
+#formularioCompra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+#formularioCompra .formInputs{
+    margin: 10px 0px;
+    width: 100%;
+    
+}
+
+.formInputs label{
+    font-size: 2em;
+}
+
+.formInputs input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: solid 2px rgb(37, 37, 37, 0.7);
+    font-size: medium;
+    
+    
+}
+
+.selectCuotas{
+    width: 100%;
+    padding: 5px;
+    border: solid 2px rgb(37, 37, 37, 0.7);
+    border-radius: 5px;
+}
+
+
+/* Estilos para el contenedor de la tarjeta */
+.tarjeta {
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 500px; 
+    height: 300px; 
+    border-radius: 10px;
+    border: solid;
+    position: relative;
+    
+    margin-top: 20px;
+}
+
+.tarjeta input{
+    padding: 10px 0px;
+    font-size: medium;
+    color: white;
+}
+
+/* Estilos para los campos de entrada */
+.campo {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el campo de "Número de Tarjeta" */
+#numeroTarjetaCont {
+    position: absolute;
+    top: 100px; /* Ajusta según la posición deseada */
+    left: 20px; 
+}
+
+/* Estilos para el campo de "Nombre del Titular" */
+#nombreTitularCont {
+    position: absolute;
+    top: 150px; /* Ajusta según la posición deseada */
+    left: 20px; 
+}
+
+/* Estilos para el campo de "Fecha de Vencimiento" */
+#fechaVencimientoCont {
+    position: absolute;
+    top: 200px; /* Ajusta según la posición deseada */
+    left: 250px; 
+}
+#fechaVencimientoCont label{
+    display: block;
+}
+#numeroTarjeta{
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    
+}
+#nombreTitular{
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    
+}
+#cvc{
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    
+}
+#fechaVencimiento{
+   background-color: transparent; 
+   border-top-style: hidden;
+   border-right-style: hidden;
+   border-left-style: hidden;
+   
+}
+
+/* Estilos para el campo de "CVC" */
+#cvcCont {
+    position: absolute;
+    top: 200px; /* Ajusta según la posición deseada */
+    left: 20px; 
+    
+}
+#cvcCont label {
+    display: block;
+}
+
+/* Estilos para el botón */
+.boton {
+
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  

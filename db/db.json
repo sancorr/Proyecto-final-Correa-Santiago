@@ -1,0 +1,44 @@
+[
+    {
+       "id":"A",
+       "celular":"Samsung S24 Ultra",
+       "precio":500000,
+       "img":"../img/samsungS23.webp"
+    },
+    {
+       "id":"B",
+       "celular":"Iphone 15 plus",
+       "precio":600000,
+       "img":"../img/iphonePlus15.webp"
+    },
+    {
+       "id":"C",
+       "celular":"Moto G31",
+       "precio":190000,
+       "img":"../img/motoG31.webp"
+    },
+    {
+       "id":"D",
+       "celular":"Moto Edge 40",
+       "precio":400000,
+       "img":"../img/motoEdge40.webp"
+    },
+    {
+       "id":"E",
+       "celular":"Xiaomi note 10",
+       "precio":300000,
+       "img":"../img/xiaomiNote10.webp"
+    },
+    {
+       "id":"F",
+       "celular":"Huawei Mate 20",
+       "precio":200000,
+       "img":"../img/huaweiMate20.jpg"
+    },
+    {
+       "id":"G",
+       "celular":"Moto E22",
+       "precio":100000,
+       "img":"../img/motoE22.webp"
+    }
+]
