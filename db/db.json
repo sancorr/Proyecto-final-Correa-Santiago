@@ -40,5 +40,114 @@
        "celular":"Moto E22",
        "precio":100000,
        "img":"../img/motoE22.webp"
-    }
+    },
+    {
+      "id":"H",
+      "celular":"Samsung Galaxy S21 Ultra",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"I",
+      "celular":"Samsung Galaxy S21+",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"J",
+      "celular":"Samsung Galaxy S21",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"K",
+      "celular":"Samsung Galaxy Note 20 Ultra",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"L",
+      "celular":"Google Pixel 6 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"M",
+      "celular":"Google Pixel 6",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"N",
+      "celular":"Google Pixel 5a",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"O",
+      "celular":"Google Pixel 5",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"P",
+      "celular":"Google Pixel 4a",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"Q",
+      "celular":"Xiaomi Mi 11 Ultra",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"R",
+      "celular":"Xiaomi Mi 11",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"S",
+      "celular":"Xiaomi Mi 11 Lite",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"T",
+      "celular":"Xiaomi Redmi Note 10 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"U",
+      "celular":"Xiaomi Poco X3 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"V",
+      "celular":"Huawei P40 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"W",
+      "celular":"Huawei Mate 40 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"X",
+      "celular":"Huawei Nova 8 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   },
+   {
+      "id":"Y",
+      "celular":"Huawei P30 Pro",
+      "precio":100000,
+      "img":"../img/motoE22.webp"
+   }
+    
 ]
